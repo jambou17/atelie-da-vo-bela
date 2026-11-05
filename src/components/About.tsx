@@ -13,9 +13,9 @@ const About: React.FC = () => {
             <div className="relative mx-auto max-w-md">
               <div className="relative rounded-2xl overflow-hidden shadow-soft border-4 border-[#fbf7f4]">
                 <img
-                  src="https://images.unsplash.com/photo-1620799140408-edc6dcb6d633?auto=format&fit=crop&w=800&q=80"
-                  alt="Mãos trabalhando com fios nobres de crochê com amor e dedicação"
-                  className="w-full h-80 sm:h-96 object-cover"
+                  src="/images/about/vo-bela-trabalhando.jpeg"
+                  alt="Vó Bela tecendo com amor e dedicação ao ar livre"
+                  className="w-full h-80 sm:h-96 object-cover object-top"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-stone-900/50 via-transparent to-transparent" />
                 <div className="absolute bottom-4 left-4 right-4 bg-white/95 backdrop-blur-xs p-4 rounded-xl shadow-xs border border-stone-100 flex items-center gap-3">

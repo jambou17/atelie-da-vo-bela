@@ -1,10 +1,10 @@
 export type ProductCategory =
   | 'Todas'
-  | 'Mesa Posta'
-  | 'Decoração & Sala'
-  | 'Cozinha & Banheiro'
-  | 'Amigurumis & Bebê'
-  | 'Acessórios & Moda';
+  | 'Jogo de Banheiro'
+  | 'Jogo de Cozinha'
+  | 'Passadeira'
+  | 'Tapetes Avulsos'
+  | 'Supla (Sousplat)';
 
 export type SpecificCategory = Exclude<ProductCategory, 'Todas'>;
 

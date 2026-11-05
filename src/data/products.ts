@@ -1,135 +1,222 @@
 import { Product } from '../types';
 
+/**
+ * ---------------------------------------------------------------------------
+ * GUIA RÁPIDO PARA ADICIONAR NOVO PRODUTO AO CATÁLOGO:
+ * ---------------------------------------------------------------------------
+ * 1. Salve a foto na pasta: public/images/products/ (ex: meu-tapete.jpeg)
+ * 2. Adicione um novo bloco no array 'products' abaixo seguindo o formato:
+ * 
+ *    {
+ *      id: 'identificador-unico-sem-espacos',
+ *      name: 'Nome do Seu Produto',
+ *      category: 'Jogo de Banheiro' | 'Jogo de Cozinha' | 'Passadeira' | 'Tapetes Avulsos' | 'Supla (Sousplat)',
+ *      description: 'Breve descrição visível no card do site.',
+ *      detailedDescription: 'Descrição completa detalhada que aparece ao clicar.',
+ *      dimensions: 'Ex: 120 cm x 50 cm (personalizável sob medida)',
+ *      material: 'Ex: Barbante Ecológico nº 6 / Algodão Nobre',
+ *      priceModel: 'Sob orçamento',
+ *      tag: 'Destaque', // opcional: 'Mais Pedido', 'Lançamento', 'Exclusivo', 'Destaque'
+ *      imageUrl: '/images/products/meu-tapete.jpeg',
+ *      careTips: [
+ *        'Lavar com sabão neutro',
+ *        'Secar na horizontal à sombra',
+ *      ],
+ *    },
+ * ---------------------------------------------------------------------------
+ */
+
 export const products: Product[] = [
-  // 1. Sousplat Rendado (Mesa Posta)
+  // ==========================================
+  // JOGO DE BANHEIRO
+  // ==========================================
   {
-    id: 'sousplat-rendado',
-    name: 'Sousplat Rendado',
-    category: 'Mesa Posta',
+    id: 'jogo-de-banheiro-harmonia-rose-4-pecas',
+    name: 'Jogo de Banheiro Harmonia Rosé (4 Peças)',
+    category: 'Jogo de Banheiro',
     description:
-      'Sousplat em crochê feito à mão com fio 100% algodão. Dá um toque de elegância e carinho para a mesa posta.',
+      'Conjunto completo e aconchegante para banheiro em tons rosé e areia com contorno colorido artesanal.',
     detailedDescription:
-      'Sousplat em crochê feito à mão com fio 100% algodão nobre. Dá um toque de elegância, acolhimento e carinho para a sua mesa posta, protegendo o móvel e valorizando cada refeição em família ou recepção de amigos.',
-    dimensions: '38 cm de diâmetro (tamanho padrão para pratos rasos)',
-    material: 'Fio 100% Algodão Premium',
+      'Jogo completo de 4 peças confeccionado com barbante macio de alta durabilidade. Inclui tapete retangular para a pia, tapete oval complementar, encaixe para o pé do vaso e tampa de vaso ajustável. Combinação perfeita de beleza, conforto térmico e carinho para o seu banheiro ou lavabo.',
+    dimensions: 'Tapete pia: 68x48cm | Encaixe vaso: 52x46cm | Tampa: ajustável',
+    material: 'Barbante Especial 100% Algodão nº 6',
     priceModel: 'Sob orçamento',
     tag: 'Mais Pedido',
-    imageUrl:
-      'https://images.unsplash.com/photo-1615529162924-f8605388461d?auto=format&fit=crop&w=600&q=80',
+    imageUrl: '/images/products/jogo-banheiro-rose-completo.jpeg',
     careTips: [
-      'Lavar à mão com sabão neutro',
-      'Não torcer, apenas pressionar suavemente para retirar a água',
+      'Lavar delicadamente com sabão neutro',
+      'Não torcer vigorosamente, pressionar com toalha',
+      'Secar estendido à sombra em superfície plana',
+    ],
+  },
+  {
+    id: 'jogo-de-banheiro-artesanal-3-pecas',
+    name: 'Jogo de Banheiro Artesanal (3 Peças)',
+    category: 'Jogo de Banheiro',
+    description:
+      'Conjunto de 3 peças com tampa telada, encaixe anatômico e tapete reto com bico trabalhado.',
+    detailedDescription:
+      'Conjunto essencial para banheiro feito à mão com pontos fechados e bico rendado multicolorido. A tampa possui rede ajustável que se adapta com facilidade a qualquer modelo de louça sanitária. Peça higiênica, lavável e de excelente fixação no chão.',
+    dimensions: 'Tapete reto: 65x45cm | Encaixe vaso: 50x45cm | Tampa c/ rede',
+    material: 'Barbante Conforto nº 6 com Detalhes Multicoloridos',
+    priceModel: 'Sob orçamento',
+    tag: 'Destaque',
+    imageUrl: '/images/products/jogo-banheiro-rose-detalhe.jpeg',
+    careTips: [
+      'Lavar à mão ou na máquina em ciclo delicado',
+      'Não utilizar alvejante com cloro',
       'Secar na horizontal à sombra',
     ],
   },
 
-  // 2. Passadeira de Crochê (Decoração & Sala)
+  // ==========================================
+  // JOGO DE COZINHA
+  // ==========================================
   {
-    id: 'passadeira-de-croche',
-    name: 'Passadeira de Crochê',
-    category: 'Decoração & Sala',
+    id: 'jogo-de-cozinha-tradicional-3-pecas',
+    name: 'Jogo de Cozinha Tradicional (3 Peças)',
+    category: 'Jogo de Cozinha',
     description:
-      'Passadeira longa e encorpada, ideal para corredores, salas ou beiradas de cama. Conforto e beleza para o lar.',
+      'Kit completo com passadeira longa para pia e dois tapetes avulsos em marrom, vermelho e cru.',
     detailedDescription:
-      'Passadeira longa, densa e encorpada, tecida ponto a ponto com barbante de alta durabilidade. Proporciona aconchego térmico, excelente estabilidade no chão e beleza artesanal para corredores, salas ou ao lado da cama.',
-    dimensions: '150 cm x 50 cm (personalizável sob medida)',
-    material: 'Barbante Ecológico de Alta Resistência',
-    priceModel: 'Sob orçamento',
-    tag: 'Destaque',
-    imageUrl:
-      'https://images.unsplash.com/photo-1583847268964-b28dc8f51f92?auto=format&fit=crop&w=600&q=80',
-    careTips: [
-      'Lavar à mão ou na máquina em ciclo suave dentro de saquinho',
-      'Não utilizar alvejante clorado',
-      'Secar estendida à sombra',
-    ],
-  },
-
-  // 3. Tapete Oval Clássico (Decoração & Sala)
-  {
-    id: 'tapete-oval-classico',
-    name: 'Tapete Oval Clássico',
-    category: 'Decoração & Sala',
-    description:
-      'Tapete de crochê feito com barbante de alta qualidade. Sob medida e com escolha de cores personalizada.',
-    detailedDescription:
-      'Tapete clássico com desenho oval harmonioso, pontos alinhados e acabamento de bico trabalhado. Uma peça atemporal que valoriza salas de estar, quartos e lavabos, com paleta de cores 100% personalizável.',
-    dimensions: '110 cm x 70 cm (tamanho personalizável)',
-    material: 'Barbante Especial Macio nº 8',
-    priceModel: 'Sob orçamento',
-    tag: 'Clássico',
-    imageUrl:
-      'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=600&q=80',
-    careTips: [
-      'Lavar com água fria e sabão neutro',
-      'Secar na horizontal no varal ou chão',
-    ],
-  },
-
-  // 4. Jogo de Cozinha em Crochê (Cozinha & Banheiro)
-  {
-    id: 'jogo-de-cozinha-em-croche',
-    name: 'Jogo de Cozinha em Crochê',
-    category: 'Cozinha & Banheiro',
-    description:
-      'Conjunto charmoso para deixar a cozinha aconchegante e cheia de estilo. Feito sob encomenda.',
-    detailedDescription:
-      'Conjunto completo para transformar o cantinho mais afetivo da casa. Inclui passadeira para pia e tapetes complementares para geladeira e fogão, aliando aconchego, higiene e praticidade.',
-    dimensions: 'Passadeira: 140x50cm | Tapetes menores: 70x50cm',
-    material: 'Barbante Macio de Alta Qualidade',
-    priceModel: 'Sob orçamento',
-    tag: 'Novidade',
-    imageUrl:
-      'https://images.unsplash.com/photo-1556911220-e15b29be8c8f?auto=format&fit=crop&w=600&q=80',
-    careTips: [
-      'Lavar com sabão neutro ou de coco',
-      'Secar à sombra em superfície plana',
-    ],
-  },
-
-  // 5. Jogo de Banheiro Harmonia (Cozinha & Banheiro)
-  {
-    id: 'jogo-de-banheiro-harmonia',
-    name: 'Jogo de Banheiro Harmonia',
-    category: 'Cozinha & Banheiro',
-    description:
-      'Jogo completo em crochê para o banheiro (tapete de pia, tampa de vaso e encaixe). Delicado e durável.',
-    detailedDescription:
-      'Jogo completo de 3 peças sob medida: tapete da pia, tampa do vaso com amarração ajustável e tapete para a base do vaso. Pontos fofinhos que proporcionam conforto térmico e elegância ao seu banheiro ou lavabo.',
-    dimensions: 'Tapete Pia: 65x48cm | Tampa: ajustável | Encaixe: 50x45cm',
-    material: 'Barbante Conforto nº 6 com Detalhes em Relevo',
+      'O clássico que traz calor e afetividade para o coração da casa! Composto por 1 passadeira comprida para a bancada da pia e 2 tapetes menores para o fogão e geladeira. Trama encorpada que retém respingos, protege o piso e decora com elegância atemporal.',
+    dimensions: '1 Passadeira: 140x50cm | 2 Tapetes menores: 70x50cm',
+    material: 'Barbante Ecológico de Alta Resistência nº 8',
     priceModel: 'Sob orçamento',
     tag: 'Completo',
-    imageUrl:
-      'https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&w=600&q=80',
+    imageUrl: '/images/products/jogo-cozinha-tradicional.jpeg',
     careTips: [
-      'Lavar delicadamente sem cloro',
-      'Secar bem estendido à sombra',
+      'Lavar com sabão de coco ou neutro',
+      'Secar bem estendido à sombra no chão ou varal',
+      'Passar as mãos para alinhar o desenho após a secagem',
     ],
   },
 
-  // 6. Caminho de Mesa Artesanal (Mesa Posta)
+  // ==========================================
+  // PASSADEIRA
+  // ==========================================
   {
-    id: 'caminho-de-mesa-artesanal',
-    name: 'Caminho de Mesa Artesanal',
-    category: 'Mesa Posta',
+    id: 'passadeira-oval-rose-areia',
+    name: 'Passadeira Oval Rosé e Areia',
+    category: 'Passadeira',
     description:
-      'Trilho ou caminho de mesa trabalhado com pontos delicados. Perfeito para realçar a sala de jantar.',
+      'Passadeira longa com desenho oval clássico, acabamento rendado e harmonia em tons suaves.',
     detailedDescription:
-      'Trilho de mesa elaborado com pontos vazados e rendados elegantes. Perfeito para realçar a mesa da sala de jantar ou balcão, com caimento impecável e opções de acabamento com tassel.',
-    dimensions: '140 cm x 45 cm (personalizável no comprimento)',
-    material: 'Fio 100% Algodão com Toque Macio',
+      'Passadeira sofisticada tecida ponto a ponto no formato oval com centro alongado e bicos delicados. Ideal para beirada de cama, corredores amplos ou hall de entrada. O toque de aconchego perfeito com paleta de cores neutra e acolhedora.',
+    dimensions: '140 cm x 52 cm (comprimento personalizável sob encomenda)',
+    material: 'Fio Macio Algodão Premium nº 6',
     priceModel: 'Sob orçamento',
     tag: 'Elegância',
-    imageUrl:
-      'https://images.unsplash.com/photo-1577805947697-89e18249d767?auto=format&fit=crop&w=600&q=80',
+    imageUrl: '/images/products/passadeira-oval-rose.jpeg',
     careTips: [
-      'Lavar à mão com carinho',
+      'Lavar com água fria e sabão neutro',
+      'Evitar pendurar pelas pontas para não deformar',
       'Secar na horizontal',
-      'Passar a ferro morno',
+    ],
+  },
+  {
+    id: 'passadeira-listrada-laranja-franjas',
+    name: 'Passadeira Listrada com Franjas',
+    category: 'Passadeira',
+    description:
+      'Peça rústica e vibrante com listras em laranja e cru e charmosas franjas trançadas à mão.',
+    detailedDescription:
+      'Passadeira encorpada de alta durabilidade com faixas contrastantes em laranja vivo e cru natural. As franjas trançadas nas extremidades conferem um visual rústico e acolhedor, perfeito para áreas de convivência, quartos e salas de jantar.',
+    dimensions: '150 cm x 50 cm (mais franjas de 8 cm)',
+    material: 'Barbante Rústico de Alta Durabilidade nº 8',
+    priceModel: 'Sob orçamento',
+    tag: 'Novidade',
+    imageUrl: '/images/products/passadeira-listrada-laranja.jpeg',
+    careTips: [
+      'Lavar suavemente para preservar as franjas',
+      'Penteie suavemente as franjas ainda úmidas',
+      'Secar à sombra esticada',
+    ],
+  },
+
+  // ==========================================
+  // TAPETES AVULSOS
+  // ==========================================
+  {
+    id: 'tapete-granny-squares-retalhos-coloridos',
+    name: 'Tapete Granny Squares Retalhos Coloridos',
+    category: 'Tapetes Avulsos',
+    description:
+      'Puro charme vintage: tapete confeccionado com blocos geométricos granny square multicoloridos.',
+    detailedDescription:
+      'Uma verdadeira obra de arte afetiva! Cada quadradinho é tecido individualmente com composições de cores únicas e em seguida costurado artesanalmente com união impecável em preto/grafite. Uma peça exclusiva que traz alegria, personalidade e conforto para qualquer ambiente.',
+    dimensions: '110 cm x 70 cm (tamanho único artesanal)',
+    material: 'Barbantes Variados 100% Reciclados e Nobres',
+    priceModel: 'Sob orçamento',
+    tag: 'Exclusivo',
+    imageUrl: '/images/products/tapete-granny-squares.jpeg',
+    careTips: [
+      'Lavar em ciclo suave com sabão neutro',
+      'Secar plano sem exposição direta ao sol forte',
+    ],
+  },
+  {
+    id: 'tapete-oval-moderno-grafite',
+    name: 'Tapete Oval Moderno Cinza e Grafite',
+    category: 'Tapetes Avulsos',
+    description:
+      'Tapete oval minimalista e contemporâneo com miolo cinza mescla e borda preta imponente.',
+    detailedDescription:
+      'Modelo versátil que se adapta a decorações modernas ou industriais. Com centro cinza e moldura escura em ponto trabalhado com relevo, oferece excelente aderência ao chão e textura agradável aos pés.',
+    dimensions: '85 cm x 55 cm (personalizável sob medida)',
+    material: 'Barbante Espesso Conforto nº 8',
+    priceModel: 'Sob orçamento',
+    tag: 'Moderno',
+    imageUrl: '/images/products/tapete-oval-grafite.jpeg',
+    careTips: [
+      'Lavar com água e sabão líquido neutro',
+      'Não usar escovas rígidas',
+      'Secar estendido',
+    ],
+  },
+
+  // ==========================================
+  // SUPLA (SOUSPLAT)
+  // ==========================================
+  {
+    id: 'sousplat-nobre-borda-dourada',
+    name: 'Sousplat Nobre com Borda Dourada',
+    category: 'Supla (Sousplat)',
+    description:
+      'Sousplat delicado em crochê branco com acabamento em bico dourado nobre.',
+    detailedDescription:
+      'Peça refinada para vestir a mesa posta com requinte e aconchego. Tecido com fio 100% algodão alvejado e finalizado com um brilhante arremate em fio metálico dourado. Ideal como apoio de pratos finos, centros de mesa ou base para arranjos florais.',
+    dimensions: '36 cm de diâmetro (sob medida para pratos rasos)',
+    material: 'Fio 100% Algodão com Fio Metálico Ouro',
+    priceModel: 'Sob orçamento',
+    tag: 'Mais Pedido',
+    imageUrl: '/images/products/supla-borda-dourada.jpeg',
+    careTips: [
+      'Lavar à mão com carinho e sabão suave',
+      'Não alvejar e não esfregar a borda metálica',
+      'Passar pelo avesso com ferro morno e proteção',
+    ],
+  },
+  {
+    id: 'jogo-de-sousplat-natalino-especial',
+    name: 'Jogo de Sousplat Natalino Especial',
+    category: 'Supla (Sousplat)',
+    description:
+      'Conjunto festivo em tons vermelho e verde musgo com brilho para ceias e momentos inesquecíveis.',
+    detailedDescription:
+      'Conjunto com 4 sousplats artesanais confeccionados especialmente para a época natalina e recepções especiais. O fio nobre com partículas de brilho reluz à luz das velas, proporcionando uma atmosfera mágica e acolhedora para reunir a família ao redor da mesa.',
+    dimensions: '4 peças de 38 cm de diâmetro cada',
+    material: 'Fio Premium com Brilho e Acabamento Ondulado',
+    priceModel: 'Sob orçamento',
+    tag: 'Edição Especial',
+    imageUrl: '/images/products/supla-natalino.jpeg',
+    careTips: [
+      'Lavar à mão com água fria',
+      'Não centrifugar',
+      'Secar sobre superfície plana à sombra',
     ],
   },
 ];
 
-// Alias export for backwards compatibility
+// Alias export para retrocompatibilidade
 export const PRODUCTS = products;
