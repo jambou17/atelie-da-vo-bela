@@ -85,8 +85,8 @@ const Header: React.FC = () => {
               <div className="relative bg-white p-3 rounded-2xl shadow-soft border border-stone-200/80 overflow-hidden">
                 <div className="relative aspect-4/3 rounded-xl overflow-hidden group">
                   <img
-                    src="/images/about/vo-bela-poltrona.jpeg"
-                    alt="Vó Bela tecendo peças artesanais em crochê"
+                    src="/images/about/croche-destaque-hero.jpeg"
+                    alt="Peças artesanais exclusivas em crochê do Ateliê da Vó Bela"
                     className="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-stone-900/60 via-transparent to-transparent flex items-end p-5">
