@@ -43,6 +43,10 @@ export const products: Product[] = [
     priceModel: 'Sob orçamento',
     tag: 'Mais Pedido',
     imageUrl: '/images/products/jogo-banheiro-rose-completo.jpeg',
+    images: [
+      '/images/products/jogo-banheiro-rose-completo.jpeg',
+      '/images/products/jogo-banheiro-rose-detalhe.jpeg',
+    ],
     careTips: [
       'Lavar delicadamente com sabão neutro',
       'Não torcer vigorosamente, pressionar com toalha',
@@ -85,6 +89,10 @@ export const products: Product[] = [
     priceModel: 'Sob orçamento',
     tag: 'Completo',
     imageUrl: '/images/products/jogo-cozinha-tradicional.jpeg',
+    images: [
+      '/images/products/jogo-cozinha-tradicional.jpeg',
+      '/images/products/jogo-cozinha-angulo2.jpeg',
+    ],
     careTips: [
       'Lavar com sabão de coco ou neutro',
       'Secar bem estendido à sombra no chão ou varal',
@@ -150,6 +158,10 @@ export const products: Product[] = [
     priceModel: 'Sob orçamento',
     tag: 'Exclusivo',
     imageUrl: '/images/products/tapete-granny-squares.jpeg',
+    images: [
+      '/images/products/tapete-granny-squares.jpeg',
+      '/images/products/tapete-granny-squares-detalhe.jpeg',
+    ],
     careTips: [
       'Lavar em ciclo suave com sabão neutro',
       'Secar plano sem exposição direta ao sol forte',

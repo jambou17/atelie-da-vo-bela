@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { MessageCircle, Eye, Ruler, Sparkles } from 'lucide-react';
+import { MessageCircle, Eye, Ruler, Sparkles, Image as ImageIcon } from 'lucide-react';
 import { Product } from '../types';
 import { getWhatsAppLink } from '../config';
 
@@ -47,6 +47,12 @@ const ProductCard: React.FC<ProductCardProps> = ({ product, onOpenDetails }) => 
             <span className="bg-primary text-white text-[11px] font-semibold px-2.5 py-1 rounded-full shadow-2xs flex items-center gap-1">
               <Sparkles className="w-2.5 h-2.5 shrink-0" />
               <span>{product.tag}</span>
+            </span>
+          )}
+          {product.images && product.images.length > 1 && (
+            <span className="bg-black/60 text-white backdrop-blur-xs text-[11px] font-semibold px-2.5 py-1 rounded-full shadow-2xs flex items-center gap-1">
+              <ImageIcon className="w-2.5 h-2.5 shrink-0 text-sand" />
+              <span>{product.images.length} fotos</span>
             </span>
           )}
         </div>

@@ -18,6 +18,7 @@ export interface Product {
   material: string;
   priceModel: string; // Ex: "Sob orçamento"
   imageUrl: string;
+  images?: string[]; // Galeria com múltiplas fotos (opcional)
   tag?: string; // Ex: 'Mais Pedido', 'Lançamento', 'Exclusivo'
   careTips?: string[];
 }

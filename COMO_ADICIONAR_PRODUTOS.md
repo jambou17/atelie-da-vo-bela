@@ -35,7 +35,11 @@ Adicione um novo bloco no final da lista `products`, antes do `];`:
     material: 'Barbante 100% Algodão nº 6', // Fio / Barbante utilizado
     priceModel: 'Sob orçamento',
     tag: 'Novidade', // Opcional: 'Mais Pedido', 'Lançamento', 'Destaque', 'Exclusivo'
-    imageUrl: '/images/products/jogo-banheiro-azul.jpeg', // Caminho da foto que você salvou no Passo 1
+    imageUrl: '/images/products/jogo-banheiro-azul.jpeg', // Foto principal
+    images: [ // Opcional: se tiver mais de uma foto para abrir galeria no modal!
+      '/images/products/jogo-banheiro-azul.jpeg',
+      '/images/products/jogo-banheiro-azul-detalhe.jpeg',
+    ],
     careTips: [
       'Lavar à mão com sabão neutro',
       'Secar estendido à sombra na horizontal',
